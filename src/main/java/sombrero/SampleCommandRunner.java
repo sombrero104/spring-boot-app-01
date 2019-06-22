@@ -1,11 +1,13 @@
 package sombrero;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
 @Component
+@Order(1)
 public class SampleCommandRunner implements CommandLineRunner {
 
     @Override
