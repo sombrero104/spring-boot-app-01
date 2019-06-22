@@ -19,10 +19,16 @@ public class SampleArguments {
      * (1) VM Option : -Dfoo
      * (2) Program arguments : --bar
      *
+     * --로 들어오는 Program arguments만 사용하는 것을 확인할 수 있다.
+     *
+     * $ java -jar target/spring-boot-app-01-1.0-SNAPSHOT.jar -Dfoo --bar
+     *
      */
 
     public SampleArguments(ApplicationArguments arguments) {
+        System.out.println("==================================");
         System.out.println("# (1) foo: " + arguments.containsOption("foo"));
         System.out.println("# (2) bar: " + arguments.containsOption("bar"));
+        System.out.println("==================================");
     }
 }
