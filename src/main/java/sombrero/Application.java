@@ -24,6 +24,9 @@ public class Application {
          * WebApplicationType.NONE
          */
         app.run(args);
+
+
+
     }
 
 }
